@@ -1,0 +1,23 @@
+{
+  "name": "employee-review-system-master",
+  "version": "1.0.0",
+  "description": "A greate project which is use to submit review against each other for employees. And there is an admin   who can see all employees, he can delete any of employee and he can create any employee. An admin can    create any employee to admin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "\"sonu\"",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.5.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}
