@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 
 
 // mongoose.connect('tabase?retryWrites=true&w=majority');
-let MongoDB_URL="mongodb+srv://sonukumar:Sonu6342@cluster0.cl4vgh9.mongodb.net/employee-review-system?retryWrites=true&w=majority";
+//et MongoDB_URL="mongodb+srv://sonukumar:Sonu6342@cluster0.cl4vgh9.mongodb.net/employee-review-system?retryWrites=true&w=majority";
 
-mongoose.connect(MongoDB_URL,{
+mongoose.connect(process.env.MongoDB_URL,{
     useNewUrlParser: true,
     //useFindAndModify: false,
     useUnifiedTopology: true

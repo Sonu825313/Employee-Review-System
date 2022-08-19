@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema({
     isAdmin : {
         type : Boolean,
         required : true,
+        default: false
     },
     to : [     // i have to review whom
         {

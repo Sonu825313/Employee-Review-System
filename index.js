@@ -2,8 +2,8 @@ const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const mongoose = require("mongoose");
 const session = require("express-session");
-const dotenv = require("dotenv"); //require dotenv package
-dotenv.config({ path: "./config.env" }); //import config.env file
+require('dotenv').config()
+
 
 
 const passport = require("passport");
@@ -55,7 +55,7 @@ app.use(
     },
     store: MongoStore.create(
       {
-        mongoUrl: "mongodb://localhost:27017/habit",
+        mongoUrl: process.env.MongoDB_URL,
         autoRemove: "disabled",
       },
       function (err) {
